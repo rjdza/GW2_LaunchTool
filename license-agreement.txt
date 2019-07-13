@@ -1,0 +1,45 @@
+-=START OF DOCUMENT=-
+
+               Compact AutoRunner version 1.0.1 build 100
+     Compact AutoRunner Configuration Builder version 1.0.1 build 100
+
+                  Copyright (C) 2008 Carroll Dearstone
+
+                       http://www.hamradiousa.net
+                        http://www.lunarious.com
+
+                     ------------------------------
+                       Software License Agreement
+                     ------------------------------
+
+This Software License Agreement is an agreement between the user (You) and
+Carroll Dearstone (The Author).
+
+  * You may not alter this software in any way, except through the ini
+    configuration file.
+
+  * COMPACT AUTORUNNER IS DISTRIBUTED "AS IS".  NO WARRANTY OF ANY KIND IS
+    EXPRESSED OR IMPLIED.  YOU USE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE
+    LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS
+    WHILE USING OR MISUSING THIS SOFTWARE.
+
+  * You are hereby licensed to make unlimited copies of the ''donationware'' 
+    version of this software and documentation; give exact copies of the 
+    original ''donationware'' version to anyone you wish as long as it is free.
+    The exact copy should not be bundled with another software title or with
+    any documents without the explicit written permission from the author
+    Carroll Dearstone.
+    
+  * You may only use modified configurations for the autorun menus you create.
+
+  * Compact AutoRunner is Copyright ©2008 Carroll Dearstone
+
+  * Downloading, Extracting, and/or using Compact AutoRunner signifies
+    acceptance of these terms and conditions of the license.  If you do not
+    agree with the terms of this license you must remove/uninstall Compact
+    AutoRunner files from any storage devices that it is on and cease to use
+    the product.
+
+  * This License Agreement is current as of July 22nd, 2008 at 12:00 PM UTC
+
+-=END OF DOCUMENT=-

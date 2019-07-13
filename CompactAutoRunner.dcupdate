@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+<Local>
+       <Label>Compact AutoRunner by Carroll Dearstone</Label>
+       <IconFile>CompactAutoRunner.exe</IconFile>
+       <Version>1.0.1.100</Version>
+       <VersionFileRemote>http://www.hamradiousa.net/downloads/car_versioninfo.xml</VersionFileRemote>
+       <WebPage>http://www.hamradiousa.net/compactautorunner.html</WebPage>
+       <UpdateMethod>visit</UpdateMethod>
+</Local>
