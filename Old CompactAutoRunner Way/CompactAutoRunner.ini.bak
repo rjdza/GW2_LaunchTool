@@ -1,5 +1,3 @@
-[Icon]
-Icon.File=<APP_PATH>\images\icon_m_square.ico
 [Form]
 Main.Width=630
 Main.Height=375
