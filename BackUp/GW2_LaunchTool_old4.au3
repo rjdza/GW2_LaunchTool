@@ -22,8 +22,8 @@ Global $GW2_FullPath
 Global $GW2_RunPath
 Global $SyncAfterShutdown
 
-Global $LIVE_DAT = @AppDataDir & "\Guild Wars 2\Local.dat"
-If FileExists($LIVE_DAT) Then
+Global $LIVE_DAT=@AppDataDir & "\Guild Wars 2\Local.dat"
+if FileExists($LIVE_DAT) Then
 Else
 	ShowMsg("Cannot find GW2 DAT file.  Run GW2 at least once on this machine and try again.")
 	Exit
@@ -60,12 +60,12 @@ Else
 				$UseLinks = False
 				ShowMsg("Use DAT not yet implemented")
 
-			Case "syncdat"
+			Case "SyncDat"
 				$SyncAfterShutdown = True
 
 			Case Else
 ;~ 				ShowMsg("Unknown Key: >" & String($Key) & "<")
-				If $AccName = "" Then $AccName = $Key
+				if $AccName = "" then $AccName = $Key
 		EndSwitch
 
 	Next
@@ -97,8 +97,8 @@ Func CheckGW2Path()
 		Exit
 	EndIf
 
-	$GW2_FullPath = _PathFull($GW2_Path)
-	$GW2_FullPath = FileGetShortName($GW2_FullPath)
-	$GW2_RunPath = FileGetShortName($GW2_FullPath & $GW2_Exe)
+	$GW2_FullPath = _PathFull($GW2_Path )
+	$GW2_FullPath = FileGetShortName( $GW2_FullPath )
+	$GW2_RunPath = FileGetShortName( $GW2_FullPath & $GW2_Exe )
 
 EndFunc   ;==>CheckGW2Path
