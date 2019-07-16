@@ -3,11 +3,11 @@
 #include <File.au3>
 #include "autoit_resources\onEventFunc.au3"
 Global $Index
-If Not IsDeclared("GW2_Path") Then Global $GW2_Path
-If Not IsDeclared("GW2_FullPath") Then Global $GW2_FullPath
+If Not IsDeclared ( "GW2_Path" ) Then  Global $GW2_Path
+If Not IsDeclared ( "GW2_FullPath" ) Then  Global $GW2_FullPath
 Opt("GUIOnEventMode", 1)
 
-$GW2_BG_Image = @MyDocumentsDir & "\Guild Wars 2\GW2LT-BGImg.jpg"
+$GW2_BG_Image=@MyDocumentsDir & "\Guild Wars 2\GW2LT-BGImg.jpg"
 ;~ ShowMsg($GW2_BG_Image)
 If Not FileExists($GW2_BG_Image) Then
 	FileInstall("autoit_resources\gw2.jpg", $GW2_BG_Image)
@@ -24,7 +24,7 @@ Func MainMenu()
 	$gui = GUICreate("GW2 Multi Account Launch Tool", 610, 343)
 	GUISetOnEvent($GUI_EVENT_CLOSE, "ClickExit")
 	GUISetIcon("autoit_resources\gw2_icon.ico")
-	$gw2_bg = GUICtrlCreatePic($GW2_BG_Image, 0, 0, 610, 343)
+ 	$gw2_bg = GUICtrlCreatePic($GW2_BG_Image, 0, 0, 610, 343)
 	GUICtrlSetState($gw2_bg, $GUI_DISABLE)
 
 ;~ Getting list of Account Files
@@ -99,4 +99,4 @@ Func DupeAccount()
 	Local $NewAcc = InputBox("Duplicate Current Account", "Name for new account")
 	ShowMsg("Dupe Account to name: " & $NewAcc)
 
-EndFunc   ;==>DupeAccount
+EndFunc   ;==>ClickAccount

@@ -1,18 +1,7 @@
 #Region ;**** Directives created by AutoIt3Wrapper_GUI ****
 #AutoIt3Wrapper_Icon=autoit_resources\gw2_icon.ico
-#AutoIt3Wrapper_Outfile=bin\GW2_MultiAccount_Launch_Tool_x86.Exe
-#AutoIt3Wrapper_Outfile_x64=bin\GW2_MultiAccount_Launch_Tool_x64.Exe
 #AutoIt3Wrapper_Compile_Both=y
 #AutoIt3Wrapper_UseX64=y
-#AutoIt3Wrapper_Res_Description=GW2 Multi-Account Launcher
-#AutoIt3Wrapper_Res_Fileversion=0.9.0.17
-#AutoIt3Wrapper_Res_Fileversion_AutoIncrement=y
-#AutoIt3Wrapper_Res_ProductName=GW2 Multi-Account Launcher
-#AutoIt3Wrapper_Res_ProductVersion=1
-#AutoIt3Wrapper_Res_CompanyName=None
-#AutoIt3Wrapper_Res_LegalCopyright=GPL v2
-#AutoIt3Wrapper_Res_Icon_Add=autoit_resources\gw2_icon.ico
-#AutoIt3Wrapper_Res_File_Add=autoit_resources\gw2.jpg
 #AutoIt3Wrapper_Run_Tidy=y
 #AutoIt3Wrapper_Run_Au3Stripper=y
 #EndRegion ;**** Directives created by AutoIt3Wrapper_GUI ****
@@ -47,6 +36,7 @@ EndIf
 If $CmdLine[0] = "" Then
 	MainMenu()
 Else
+;~ 	SetProfileDat($CmdLine[1])
 
 	For $Count = 1 To $CmdLine[0]
 
@@ -99,14 +89,15 @@ Func ShowMsg($Message)
 EndFunc   ;==>ShowMsg
 
 Func FindGW2Path()
-	$TMP_Path = StringSplit("..\,.\,..\..\,..\..\..\", ",")
-	For $Count = 1 To UBound($TMP_Path) - 1
+	$TMP_Path = StringSplit("..\,.\", ",")
+	For $Count = 1 to Ubound($TMP_Path -1)
 		If FileExists($TMP_Path[$Count] & $GW2_Exe) Then
-			$GW2_Path = _PathFull($TMP_Path[$Count])
+			$GW2_Path = $TMP_Path[$Count]
 			ExitLoop
 		EndIf
 	Next
-EndFunc   ;==>FindGW2Path
+	ShowMsg("GW2 Path: " & $GW2_Path )
+EndFunc
 
 
 Func CheckGW2Path()
